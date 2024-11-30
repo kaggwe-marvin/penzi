@@ -12,9 +12,15 @@
 
 .nav__logo {
   font-size: var(--text-lg);
-  color: #ffffff;
+  color: var(--accent);
   text-decoration: none;
   font-weight: bold;
+}
+.nav__logo-icon {
+  height: 50px; /* Adjust as needed */
+  width: auto; /* Maintain aspect ratio */
+  fill: var(--accent); /* Apply dynamic fill color */
+  display: block;
 }
 
 .nav__toggle {
