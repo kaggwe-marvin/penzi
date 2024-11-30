@@ -1,0 +1,61 @@
+.menu {
+  height: 100vh; /* Full-screen height */
+  background-color: var(--primary); /* Dark background for contrast */
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-lg);
+  position: relative;
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+.menu-content {
+  max-width: 800px;
+  z-index: 2;
+}
+
+.menu h2 {
+  font-size: var(--text-lg);
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.menu p {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-lg);
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.menu-item {
+  background-color: var(--secondary);
+  color: #ffffff;
+  padding: var(--space-md);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    height: auto; /* Allow content to dictate height on smaller screens */
+    padding: var(--space-md); /* Adjust padding for smaller screens */
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-items {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Three columns for larger screens */
+  }
+}

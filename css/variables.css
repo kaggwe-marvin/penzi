@@ -1,0 +1,33 @@
+:root {
+  /* Spacing Variables */
+  --space-sm: 0.5rem; /* 8px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 2rem; /* 32px */
+
+  /* Font Sizes */
+  --text-sm: 0.875rem; /* 14px */
+  --text-md: 1rem; /* 16px */
+  --text-lg: 1.25rem; /* 20px */
+
+  /* Colors */
+  --primary: #3b3b3b;
+  --secondary: #f8f1e7;
+  --accent: #dfaf37;
+
+  /* Font Colors */
+  --text-primary: #f8f1e7;
+  --text-secondary: #3b3b3b;
+  --text-accent: #dfaf37;
+
+  /* Breakpoints */
+  --mobile: 768px;
+
+  /* Other Variables */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,118 @@
+.contact {
+  min-height: 60vh; /* Flexible height for content */
+  background-color: var(--secondary); /* Light background */
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-lg);
+  box-sizing: border-box;
+}
+
+.contact-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact h2 {
+  font-size: var(--text-lg);
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.contact p {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-md);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  text-align: left;
+  margin-bottom: var(--space-lg);
+}
+
+.contact-form label {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: var(--space-sm);
+  border: 1px solid var(--text-accent);
+  border-radius: 4px;
+  font-size: var(--text-md);
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: 4px;
+  font-size: var(--text-md);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.contact-info {
+  margin-top: var(--space-md);
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: var(--mobile)) {
+  .contact {
+    padding: var(--space-md);
+  }
+
+  .contact-content {
+    text-align: left;
+  }
+
+  .contact-info,
+  .contact-form {
+    text-align: left;
+  }
+}
+.social-icons {
+  display: flex;
+  gap: var(--space-md); /* Space between icons */
+  margin-top: var(--space-md);
+  align-items: center;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: var(--text-accent);
+  font-size: var(--text-md);
+  transition: color 0.3s ease;
+}
+
+.icon-link i {
+  font-size: 1.5rem; /* Icon size */
+}
+
+.icon-link:hover {
+  color: var(--primary);
+}

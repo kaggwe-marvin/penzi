@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penzi's Cocktail Bar</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/" class="nav__logo">Penzi's</a>
+      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle menu">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="nav__menu">
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <ul class="nav__menu"><li><a href="#contact" class="nav__cta">Reserve Now</a></li></ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Crafting Love-Inspired Cocktails for Every Occasion</h1>
+        <p>Loved by 20+ happy customers. Locally crafted with passion.</p>
+        <div class="cta-buttons">
+          <a href="#menu" class="cta-button">View Our Menu</a>
+          <a href="#contact" class="cta-button">Book Us Now</a>
+        </div>
+        <ul class="selling-points">
+          <li>Signature cocktails inspired by Ugandan flavors.</li>
+          <li>Unmatched ambiance for intimate settings.</li>
+          <li>Available for events and private bookings.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="menu" class="section menu">
+      <div class="menu-content">
+        <h2>Our Menu</h2>
+        <p>Explore our signature cocktails inspired by Ugandan flavors and global trends. Each drink is an experience.</p>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h3>Swahili Sunrise</h3>
+            <p>A vibrant blend of fresh mango, passion fruit, and rum, finished with a dash of chili and lime.</p>
+          </div>
+          <div class="menu-item">
+            <h3>Penzi’s Secret</h3>
+            <p>Local honey, aged whiskey, and a touch of rosemary, garnished with a smoked orange peel.</p>
+          </div>
+          <div class="menu-item">
+            <h3>The Ember Kiss</h3>
+            <p>A smoky, spicy drink made with mezcal, roasted pineapple, and chili bitters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="section about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Why Choose Penzi?</h2>
+          <p>
+            At Penzi Cocktail Bar, we don’t just craft drinks; we create memories. Our expertly mixed cocktails 
+            are inspired by Ugandan flavors and global trends, ensuring every sip is an experience.
+          </p>
+          <ul class="benefits">
+            <li>Tailored drink experiences for every occasion.</li>
+            <li>A vibrant and intimate atmosphere.</li>
+            <li>Unparalleled hospitality by our expert mixologists.</li>
+          </ul>
+          <p>
+            Founded by visionary mixologist Mukiibi Evans Luke, Penzi is driven by a passion for bold flavors,
+            impeccable service, and unforgettable evenings.
+          </p>
+          <p class="social-proof">
+            <strong>What Our Guests Say:</strong> <br />
+            “The most creative cocktails I’ve ever tasted!” — Jane Doe
+          </p>
+          <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>
+        <div class="about-visual">
+          <img id="aboutImage" src="./images/penzi image 3.jpg" alt="Penzi Cocktail Bar" />
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <section id="contact" class="section contact">
+      <div class="contact-content">
+        <h2>Get in Touch</h2>
+        <p>
+          Book your next experience at Penzi Cocktail Bar. Fill out the form below, and we’ll get back to you promptly
+          to confirm your reservation or answer any questions you may have.
+        </p>
+    
+        <form class="contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+    
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required />
+    
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="time" required />
+    
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required />
+    
+          <label for="message">Special Requests or Questions</label>
+          <textarea id="message" name="message" placeholder="Let us know your needs" rows="5"></textarea>
+    
+          <button type="submit" class="cta-button">Send Booking Request</button>
+        </form>
+    
+        <div class="contact-info">
+          <p><strong>Email:</strong> info@penzicocktailbar.com</p>
+          <p><strong>Phone:</strong> +256 123 456 789</p>
+          <div class="social-icons">
+            <a href="https://wa.me/256123456789" target="_blank" class="icon-link">
+              <i data-lucide="message-circle"></i> WhatsApp
+            </a>
+            <a href="https://twitter.com/PenziCocktail" target="_blank" class="icon-link">
+              <i data-lucide="twitter"></i> Twitter
+            </a>
+            <a href="https://instagram.com/PenziCocktail" target="_blank" class="icon-link">
+              <i data-lucide="instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+      
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
